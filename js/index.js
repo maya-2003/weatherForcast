@@ -37,7 +37,7 @@ function getLocation() {
 
 function getCityData(lat, lon) {
     var apiKey = "eb2c4f0568084f53b17222628240512";
-    var apiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`;
+    var apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=3`;
     var httpReq = new XMLHttpRequest();
     httpReq.open("GET", apiUrl, true);
     httpReq.responseType = "json";
