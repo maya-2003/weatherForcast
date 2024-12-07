@@ -1,7 +1,7 @@
 function searchCityWeather() {
     var city = document.getElementById("search").value;
     var key = "eb2c4f0568084f53b17222628240512"; 
-    var api = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${encodeURIComponent(city)}&days=3`;
+    var api = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${encodeURIComponent(city)}&days=3`;
 
     var httpReq = new XMLHttpRequest();
     httpReq.open("get", api);
