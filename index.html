@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="site-header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="branding" href="/">
+                <img src="images/logo.png" alt="cloud logo" class="logo" width="64" height="38">
+                <div class="logo-type">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+            </a>
+
+
+            <div class="main-navigation d-flex">
+                <ul class="d-flex gap-2">
+                    <li class="menu-item current"><a href="/">Home</a></li>
+                    <li class="menu-item"><a href="#">News</a></li>
+                    <li class="menu-item"><a href="#">Live cameras</a></li>
+                    <li class="menu-item"><a href="#">Photos</a></li>
+                    <li class="menu-item"><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="search">
+        <div class="container">
+            <form class="find-location">
+                <input type="text" placeholder="Find your location..." id="search">
+                <input type="button" value="Find" id="submitCity" class="button">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="forecast-table">
+        <div class="container">
+            <div class="forecast-container" id="forecast" class="row">
+    
+                <div class="today forecast col-lg-4 col-md-12">
+                    <div class="forecast-header forcast-today" id="today">
+                        <div class="day" id="dayToday">Thursday</div>
+                        <div class="date" id="dateToday">5 December</div>
+                    </div>
+                    <div class="forecast-content" id="current">
+                        <div class="location" id="location">Cairo</div>
+                        <div class="degree">
+                            <div class="num" id="degreeTemp">18.3<sup>o</sup>C</div>
+    
+                            <div class="forecast-icon">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="" width="90" id="weatherIcon">
+                            </div>
+                        </div>
+                        <div class="custom" id="weatherStatus">Partly cloudy</div>
+                        <span id="rainChance"><img src="images/icon-umberella.png" alt="">20%</span>
+                        <span id="windSpeed"><img src="images/icon-wind.png" alt="">18km/h</span>
+                        <span id="windDirection"><img src="images/icon-compass.png" alt="">East</span>
+                    </div>
+                </div>
+    
+                <div class="forecast col-lg-4 col-md-12">
+                    <div class="forecast-header">
+                        <div class="day" id="dayTomorrow">Friday</div>
+                    </div>
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48" id="iconTomorrow">
+                        </div>
+                        <div class="degree" id="maxTempTomorrow">22.5<sup>o</sup>C</div>
+                        <small id="minTempTomorrow">14.7<sup>o</sup>C</small>
+                        <div class="custom" id="statusTomorrow">Partly Cloudy</div>
+                    </div>
+                </div>
+    
+                <div class="forecast col-lg-4 col-md-12">
+                    <div class="forecast-header">
+                        <div class="day" id="dayAfterTomorrow">Saturday</div>
+                    </div>
+                    <div class="forecast-content">
+                        <div class="forecast-icon">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48" id="iconDayAfterTomorrow">
+                        </div>
+                        <div class="degree" id="maxTempDayAfterTomorrow">22.6<sup>o</sup>C</div>
+                        <small id="minTempDayAfterTomorrow">16.1<sup>o</sup>C</small>
+                        <div class="custom" id="statusDayAfterTomorrow">Partly Cloudy</div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form action="#" class="subscribe-form">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
